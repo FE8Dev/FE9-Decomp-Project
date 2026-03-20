@@ -53,7 +53,7 @@ Copy your game disc image to `orig/GFEP01/`. Supported formats: ISO (GCM), RVZ, 
 ```
 orig/
   GFEP01/
-    game.iso  ← place your disc image here
+    game.iso  ← place your disc image here. Also name it FE9.iso
 ```
 
 > The SHA-1 of the target `main.dol` is `1cf18d42d52c745d533715895c3a6649802324e9`.
