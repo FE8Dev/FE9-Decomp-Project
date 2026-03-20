@@ -24,7 +24,11 @@ jobs:
         GAME_ISO_URL: ${{ secrets.GAME_ISO_URL }}
       run: |
         mkdir -p orig/GFEP01
-        curl -L "$GAME_ISO_URL" -o orig/GFEP01/FE9.iso
+        curl -L "$GAME_ISO_URL" -o orig/GFEP01/game.iso
+
+    - name: Extract game ISO
+      run: |
+        tools/dtk disc extract orig/GFEP01/game.iso orig/GFEP01
 
     - name: Cache build
       uses: actions/cache@v4
