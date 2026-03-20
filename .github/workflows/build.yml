@@ -19,15 +19,11 @@ jobs:
     - name: Git config
       run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-    - name: Download game ISO
-      env:
-        GAME_ISO_URL: ${{ secrets.GAME_ISO_URL }}
-      run: |
-        mkdir -p orig/GFEP01
-        curl -L "$GAME_ISO_URL" -o orig/GFEP01/FE9.iso
 
     - name: Extract game ISO
       run: |
+        pip install gdown
+        gdown "${{ secrets.GAME_ISO_URL }}" -O orig/GFEP01/FE9.iso
         curl -L https://github.com/encounter/decomp-toolkit/releases/download/v1.8.3/dtk-linux-x86_64 -o tools/dtk
         chmod +x tools/dtk
         tools/dtk disc extract orig/GFEP01/FE9.iso orig/GFEP01
