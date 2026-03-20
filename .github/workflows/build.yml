@@ -28,6 +28,8 @@ jobs:
 
     - name: Extract game ISO
       run: |
+        curl -L https://github.com/encounter/decomp-toolkit/releases/download/v1.8.3/dtk-linux-x86_64 -o tools/dtk
+        chmod +x tools/dtk
         tools/dtk disc extract orig/GFEP01/game.iso orig/GFEP01
 
     - name: Cache build
