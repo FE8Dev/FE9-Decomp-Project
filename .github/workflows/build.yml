@@ -21,9 +21,12 @@ jobs:
 
 
     - name: Extract game ISO
+      env:
+        GAME_FILE_ID: ${{ secrets.GAME_ISO_URL }}
       run: |
+        mkdir -p orig/GFEP01
         pip install gdown
-        gdown "${{ secrets.GAME_ISO_URL }}" -O orig/GFEP01/FE9.iso
+        gdown --fuzzy "https://drive.google.com/file/d/$GAME_FILE_ID/view" -O orig/GFEP01/FE9.iso
         curl -L https://github.com/encounter/decomp-toolkit/releases/download/v1.8.3/dtk-linux-x86_64 -o tools/dtk
         chmod +x tools/dtk
         tools/dtk disc extract orig/GFEP01/FE9.iso orig/GFEP01
