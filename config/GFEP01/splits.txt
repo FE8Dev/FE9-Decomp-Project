@@ -12,3 +12,7 @@ Sections:
 	.sbss       type:bss align:32
 	.sdata2     type:rodata align:32
 	.sbss2      type:bss align:32
+
+fn_80028A04.cpp:
+	.text       start:0x80028A04 end:0x80028A1C
+	.ctors      start:0x802707F8 end:0x802707FC
