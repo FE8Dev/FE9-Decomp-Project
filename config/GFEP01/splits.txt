@@ -16,3 +16,6 @@ Sections:
 fn_80028A04.cpp:
 	.text       start:0x80028A04 end:0x80028A1C
 	.ctors      start:0x802707F8 end:0x802707FC
+
+fn_80003488.cpp:
+	.init       start:0x80003488 end:0x800034AC
