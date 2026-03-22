@@ -298,6 +298,8 @@ config.libs = [
             Object(NonMatching, "__init_hardware.cpp"),
             Object(NonMatching, "__flush_cache.cpp"),
             Object(NonMatching, "fn_800053E0.cpp"),
+            Object(NonMatching, "memset.cpp"),
+            Object(NonMatching, "memcpy.cpp"),
         ],
     },
     {
