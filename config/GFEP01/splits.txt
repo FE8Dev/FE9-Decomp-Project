@@ -17,5 +17,17 @@ fn_80028A04.cpp:
 	.text       start:0x80028A04 end:0x80028A1C
 	.ctors      start:0x802707F8 end:0x802707FC
 
+__debug_bba.cpp:
+	.init       start:0x80003140 end:0x80003154
+
+__init_hardware.cpp:
+	.init       start:0x80003400 end:0x80003424
+
+__flush_cache.cpp:
+	.init       start:0x80003424 end:0x80003458
+
 fn_80003488.cpp:
 	.init       start:0x80003488 end:0x800034AC
+
+fn_800053E0.cpp:
+	.init       start:0x800053E0 end:0x8000540C
