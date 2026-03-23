@@ -17,6 +17,9 @@ fn_80028A04.cpp:
 	.text       start:0x80028A04 end:0x80028A1C
 	.ctors      start:0x802707F8 end:0x802707FC
 
+__check_pad3.cpp:
+	.init       start:0x80003100 end:0x80003140
+
 __debug_bba.cpp:
 	.init       start:0x80003140 end:0x80003154
 

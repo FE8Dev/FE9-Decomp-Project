@@ -302,6 +302,7 @@ config.libs = [
             Object(NonMatching, "memcpy.cpp"),
             Object(NonMatching, "__fill_mem.cpp"),
             Object(NonMatching, "fn_80003458.cpp"),
+            Object(NonMatching, "__check_pad3.cpp"),
         ],
     },
     {
