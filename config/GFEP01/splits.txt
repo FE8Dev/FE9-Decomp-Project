@@ -26,6 +26,9 @@ __init_hardware.cpp:
 __flush_cache.cpp:
 	.init       start:0x80003424 end:0x80003458
 
+fn_80003458.cpp:
+	.init       start:0x80003458 end:0x80003488
+
 fn_80003488.cpp:
 	.init       start:0x80003488 end:0x800034AC
 
@@ -34,6 +37,9 @@ fn_800053E0.cpp:
 
 memset.cpp:
 	.init       start:0x8000540C end:0x8000543C
+
+__fill_mem.cpp:
+	.init       start:0x8000543C end:0x800054F4
 
 memcpy.cpp:
 	.init       start:0x800054F4 end:0x80005544

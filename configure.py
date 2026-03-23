@@ -300,6 +300,8 @@ config.libs = [
             Object(NonMatching, "fn_800053E0.cpp"),
             Object(NonMatching, "memset.cpp"),
             Object(NonMatching, "memcpy.cpp"),
+            Object(NonMatching, "__fill_mem.cpp"),
+            Object(NonMatching, "fn_80003458.cpp"),
         ],
     },
     {
