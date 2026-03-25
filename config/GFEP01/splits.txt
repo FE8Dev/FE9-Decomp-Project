@@ -17,11 +17,36 @@ fn_80028A04.cpp:
 	.text       start:0x80028A04 end:0x80028A1C
 	.ctors      start:0x802707F8 end:0x802707FC
 
+fn_80055DF8.cpp:
+	.text       start:0x80055DF8 end:0x80055DFC
+	.ctors      start:0x80270800 end:0x80270804
+
+fn_8005A45C.cpp:
+	.text       start:0x8005A45C end:0x8005A468
+	.ctors      start:0x80270804 end:0x80270808
+
+fn_800A55A0.cpp:
+	.text       start:0x800A55A0 end:0x800A55B0
+	.ctors      start:0x80270820 end:0x80270824
+
+fn_8012176C.cpp:
+	.text       start:0x8012176C end:0x80121778
+	.ctors      start:0x80270844 end:0x80270848
+
 __check_pad3.cpp:
 	.init       start:0x80003100 end:0x80003140
 
 __debug_bba.cpp:
 	.init       start:0x80003140 end:0x80003154
+
+__start.cpp:
+	.init       start:0x80003154 end:0x800032B0
+
+__init_registers.cpp:
+	.init       start:0x800032B0 end:0x80003340
+
+__init_data.cpp:
+	.init       start:0x80003340 end:0x80003400
 
 __init_hardware.cpp:
 	.init       start:0x80003400 end:0x80003424

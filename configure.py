@@ -303,6 +303,9 @@ config.libs = [
             Object(NonMatching, "__fill_mem.cpp"),
             Object(NonMatching, "fn_80003458.cpp"),
             Object(NonMatching, "__check_pad3.cpp"),
+            Object(NonMatching, "__init_registers.cpp"),
+            Object(NonMatching, "__init_data.cpp"),
+            Object(NonMatching, "__start.cpp"),
         ],
     },
     {
@@ -312,6 +315,10 @@ config.libs = [
         "progress_category": "game",
         "objects": [
             Object(Matching, "fn_80028A04.cpp"),
+            Object(NonMatching, "fn_80055DF8.cpp"),
+            Object(NonMatching, "fn_8005A45C.cpp"),
+            Object(NonMatching, "fn_8012176C.cpp"),
+            Object(NonMatching, "fn_800A55A0.cpp"),
         ],
     },
 ]
