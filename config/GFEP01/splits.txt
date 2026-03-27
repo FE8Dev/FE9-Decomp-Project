@@ -33,6 +33,11 @@ fn_8012176C.cpp:
 	.text       start:0x8012176C end:0x80121778
 	.ctors      start:0x80270844 end:0x80270848
 
+__init_cpp_exceptions.cpp:
+	.text       start:0x80235A48 end:0x80235AB8
+	.ctors      start:0x802707E0 end:0x802707E4
+	.dtors      start:0x802708A0 end:0x802708A8
+
 __check_pad3.cpp:
 	.init       start:0x80003100 end:0x80003140
 
