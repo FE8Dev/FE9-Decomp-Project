@@ -1,6 +1,5 @@
 #include <dolphin/types.h>
 
-// Object at 0x802F99A8
 struct UnkStruct_802F99A8 {
     u8 unk_00[0x13];
     u8 unk_13;
