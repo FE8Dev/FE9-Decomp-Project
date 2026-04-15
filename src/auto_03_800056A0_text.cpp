@@ -66,6 +66,7 @@ extern void* lbl_803765A0;
 extern double lbl_80376E60;
 extern u8 lbl_8028D660[];
 
+
 void fn_80005C8C() {
     fn_800C4C60(0x100000);
     fn_8005C6E4(lbl_802708E0 + 0xb4);
